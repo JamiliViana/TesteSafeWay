@@ -1,3 +1,4 @@
+package model;
 
 public class Cliente {
 	private String cpf;
@@ -16,7 +17,6 @@ public class Cliente {
 	public String getCpf() {
 		return cpf;
 	}
-	
 
 	public String getUsername() {
 		return username;
