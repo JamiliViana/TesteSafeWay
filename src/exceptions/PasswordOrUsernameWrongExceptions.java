@@ -1,9 +1,9 @@
 package exceptions;
 
-public class PasswordOrUsernameWorngExceptions extends RuntimeException{
+public class PasswordOrUsernameWrongExceptions extends RuntimeException{
     public String menssagem = "Senha ou usuario incorretos";
 
-    public PasswordOrUsernameWorngExceptions() {
+    public PasswordOrUsernameWrongExceptions() {
     }
 
     @Override

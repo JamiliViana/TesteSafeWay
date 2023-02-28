@@ -1,6 +1,6 @@
 package service;
 
-import exceptions.PasswordOrUsernameWorngExceptions;
+import exceptions.PasswordOrUsernameWrongExceptions;
 import model.*;
 
 import java.util.List;
@@ -18,12 +18,17 @@ public class LoginService {
         System.out.print("Senha: ");
         String senha = sc.next();
 
+        boolean usuarioEncontrado = false;
         for (Usuario usuario : usuarios) {
             if (usuario.getUsername().equals(username) && usuario.getSenha().equals(senha)) {
                 ExecutarService executarService = new ExecutarService();
                 executarService.executar(usuarios, clientes, empresas, produtos, carrinho, vendas, sc, usuario);
-                return;
-            }else throw new PasswordOrUsernameWorngExceptions();
+                usuarioEncontrado = true;
+                break;
+            }
+        }
+        if(!usuarioEncontrado){
+            throw new PasswordOrUsernameWrongExceptions();
         }
 
         realizarLogin(usuarios, clientes, empresas, produtos, carrinho, vendas);
