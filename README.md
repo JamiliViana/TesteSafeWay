@@ -9,6 +9,5 @@
 ### Erros de regras de negócios corrigidos:
 - Além do administrador e a própria empresa, todos os outro usuários poderiam ver
 informações da empresa (além do nome)
-- A classe Produto não tinha nenhum controle sobre qual empresa pode vendê-lo.
 - O saldo da empresa não era mostrado ja com o desconto da taxa, de nenhuma forma (agora é mostrado um valor sem taxa e outro com a taxa)
 - E a empresa não via sua taxa de comissão ao listar as vendas
