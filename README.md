@@ -7,7 +7,7 @@
 - Foi adicionado uma exception para quando a senha ou usuário especificado forem incorretos.
 - Foi adicionado uma classe para simular um banco de dados, que antes essas informações estavam na classe main, o que não torna o código limpo e claro.
 ### Erros de regras de negócios corrigidos:
-- Além do administrador e a própria empresa, todos os outro usuários poderiam ver.
-informações da empresa (além do nome)
+- Além do administrador e a própria empresa, todos os outro usuários poderiam ver
+informações da empresa (além do nome).
 - O saldo da empresa não era mostrado ja com o desconto da taxa, de nenhuma forma (agora é mostrado um valor sem taxa e outro com a taxa).
 - E a empresa não via sua taxa de comissão ao listar as vendas.
